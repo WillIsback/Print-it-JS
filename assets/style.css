@@ -123,21 +123,38 @@ header {
 }
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
 /* Gestion des fleches du carrousel */
-#banner .arrow {
+.arrows {
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	pointer-events: none;
 }
-#banner .arrow_left {
+ .arrow_left {
 	left: 10px;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	pointer-events: auto;
 }
-#banner .arrow_right {
+.arrow_right {
 	right: 10px;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	pointer-events: auto;
 }
+
 /* Gestion des points du carrousel */
 .dots {
 	position: absolute;
 	bottom: 40px;
 	display: flex;
+	flex-wrap:wrap;
 }
+
 .dot {
 	margin-inline: 5px;
 	width: 13px;
